@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(238, 238, 238);
+        }
+
+        table {
+            width: 600px;
+            margin: auto;
+            box-shadow: 2px 2px 0px rgba(126, 126, 126, 0.418);
+            background-color: white;
+        }
+
+        table:hover {
+            box-shadow: 7px 7px 0px rgba(126, 126, 126, 0.288);
+        }
+
+        tr, th, td {
+            padding: 10px;
+            border: 1px solid rgb(226, 226, 226);
+        }
+
+        thead th {
+            background-color: rgb(148, 148, 148);
+            color: white;
+        }
+
+        .media {
+            background-color: rgb(148, 148, 148);
+            color: white;
+            font-weight: bold;
+        }
+
+        td.numero {
+            text-align: center;
+        }
+
+        th.mudar:hover {
+            background-color: rgba(235, 235, 235, 0.500);
+            box-shadow: 1px 1px 0px rgba(128, 128, 128, 0.500);
+
+        }
+        
+        tr.mudar > td:hover {
+            background-color: rgba(235, 235, 235, 0.500);
+            box-shadow: 1px 1px 0px rgba(128, 128, 128, 0.500);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="col">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+            
+        </thead>
+
+        <tbody>
+            <tr class="mudar">
+                <th rowspan="4" scope="rowgroup" class="mudar">Exatas</th>
+                <td>Matemática</td>
+                <td class="numero">0.0</td>
+                <td class="numero">0.0</td>
+                <td class="numero">0.0</td>
+            </tr>
+            <tr class="mudar">
+                <td>Física</td>
+                <td class="numero">0.0</td>
+                <td class="numero">0.0</td>
+                <td class="numero">0.0</td>
+            </tr>
+            <tr class="mudar">
+                <td>Química</td>
+                <td class="numero">0.0</td>
+                <td class="numero">0.0</td>
+                <td class="numero">0.0</td>
+            </tr>
+            <tr class="mudar">
+                <td>Biologia</td>
+                <td class="numero">0.0</td>
+                <td class="numero">0.0</td>
+                <td class="numero">0.0</td>
+            </tr>
+            <tr class="media">
+                <th colspan="4">Média de Exatas</th>
+                <td class="numero">0.0</td>
+            </tr>
+            <tr class="mudar">
+                <th rowspan="2" scope="rowgroup" class="mudar">Humanas</th>
+                <td>História</td>
+                <td class="numero">0.0</td>
+                <td class="numero">0.0</td>
+                <td class="numero">0.0</td>
+            </tr>
+            <tr class="mudar">
+                <td>Geografia</td>
+                <td class="numero">0.0</td>
+                <td class="numero">0.0</td>
+                <td class="numero">0.0</td>
+            </tr>
+            <tr class="media">
+                <th colspan="4">Média de Humanas</th>
+                <td class="numero">0.0</td>
+            </tr>
+        </tbody>
+        
+    </table>
+</body>
+</html>
